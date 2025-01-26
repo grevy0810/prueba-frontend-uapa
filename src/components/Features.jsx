@@ -11,7 +11,7 @@ export default function Features(){
         <>
             <section className="features py-8" id='features'>
                 <div className="container mx-auto px-4">
-                    <h2 className="text-2xl text-5xl font-normal text-center mb-4">Features</h2>
+                    <h2 className="text-5xl font-normal text-center mb-4">Features</h2>
                     <p className="text-center mb-8 text-gray-600">
                     Most calendars are designed for teams. 
 Slate is designed for freelancers

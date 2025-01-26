@@ -26,12 +26,12 @@ export default function ContactUs() {
     
     return(
         <section className="container contact" id="Contact">
-        <h2>Contact Us</h2>
+        <h2 className="text-5xl">Contact Us</h2>
         <p>Most calendars are designed for teams. 
         Slate is designed for freelancers </p>
         <div className="hidden lg:flex w-full contact-desktop-section">
             <div className="contact-form w-1/2 max-w-[550px]">
-                <h5 className="text-xl">Contact Us</h5>
+                <h5 className="text-xl font-bold">Contact Us</h5>
                 <form name="contactForm" autoComplete="on" onSubmit={handleSubmit}>
                     <input
                     type="text"
@@ -106,7 +106,7 @@ export default function ContactUs() {
                 </div>
             </div>
             <div className="contact-form">
-                <h5 className="text-xl">Contact Us</h5>
+                <h5 className="text-xl font-bold">Contact Us</h5>
                 <form action=""  name="contactMobileForm" autoComplete="on" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Your Name" name="fname" required/>
                     <input type="email" placeholder="Your Email" required/>

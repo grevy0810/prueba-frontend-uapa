@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className="h-full w-full bg-white">
+    <div id="scrollable-container" className="h-full w-full  bg-white relative overflow-y-scroll scroll-smooth">
       <Header />
       <Features/>
       <ContactUs/>

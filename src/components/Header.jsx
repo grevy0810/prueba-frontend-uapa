@@ -15,31 +15,37 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    const scrollContainer = document.getElementById("scrollable-container");
+  
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
+      if (scrollContainer.scrollTop > window.innerHeight) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
     };
-
-    window.addEventListener("scroll", handleScroll);
+  
+    // Escucha el evento de desplazamiento en el contenedor
+    scrollContainer.addEventListener("scroll", handleScroll);
+  
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      scrollContainer.removeEventListener("scroll", handleScroll);
     };
   }, []);
   const scrollToSection = (id) => {
     const newSection = document.getElementById(id);
-    console.log('newSection ',newSection)
-    if (newSection) {
-      newSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    const scrollContainer = document.getElementById("scrollable-container"); // Tu contenedor con overflow
+
+  if (newSection && scrollContainer) {
+    const sectionTop = newSection.offsetTop - scrollContainer.offsetTop; // Calcula la posición relativa
+    scrollContainer.scrollTo({ top: sectionTop, behavior: "smooth" }); // Desplázate suavemente
+  }
   };
   return (
     <>
       <nav 
         aria-label="Global" 
-        className="mx-auto flex  items-center justify-center p-6 lg:px-14 lg:gap-5 "
+        className="mx-auto flex  items-center justify-center lg:px-14 lg:gap-5 "
         style={isScrolled ?
           {backgroundColor: '#252b42'}
           : {}
@@ -78,10 +84,10 @@ export default function Header() {
             <a href="https://www.linkedin.com/feed/"><img src="./img/linkedinwhitelogo.svg" alt=""/></a>
         </div>
       </nav>
-        <header id="home" className="clip-path items-center justify-center">
-            <div className='w-2/3'>
+        <header id="home" className="clip-path items-center justify-center lg:p-8">
+            <div className='w-full lg:w-2/3'>
 
-                <h1 className='text-7xl font-bold mb-2'>
+                <h1 className='text-4xl lg:text-7xl font-normal lg:font-bold mb-2'>
                     The best products start with Figma
                 </h1>
                 <p className='text-2xl'>
