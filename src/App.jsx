@@ -3,16 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
+import Features from './components/Features'
+import ContactUs from './components/ContactUs'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="h-screen w-screen bg-white">
+    <div className="h-full w-full bg-white">
       <Header />
-      <main className="p-4">
-        {/* <VideoSection /> */}
-      </main>
+      <Features/>
+      <ContactUs/>
+      <Footer/>
     </div>
   )
 }
