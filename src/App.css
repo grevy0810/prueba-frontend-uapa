@@ -120,7 +120,7 @@ h2 {
 
 .logosection {
   width: 70%;
-  margin: 5rem auto;
+  margin: 4rem auto 0 auto;
 }
 
 
@@ -149,7 +149,7 @@ h2 {
 .contact {
   text-align: center;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .contact-desktop-section {
@@ -162,9 +162,10 @@ h2 {
 
 .contact-form {
   border-radius: 2rem;
-  box-shadow: 10px 11px 12px 5px rgba(232, 232, 232, 1);
-  -webkit-box-shadow: 10px 11px 12px 5px rgba(232, 232, 232, 1);
-  -moz-box-shadow: 10px 11px 12px 5px rgba(232, 232, 232, 1);
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 13px 19px 0px #00000012;
+  -webkit-box-shadow: 0px 13px 19px 0px #00000012;;
+  -moz-box-shadow: 0px 13px 19px 0px #00000012;;
   padding: 2rem;
   color: rgba(24, 23, 29, 1);
 }
@@ -237,16 +238,13 @@ form {
 .footer-container {
   display: flex;
   gap: 5rem;
-  text-align: left;
-  align-items: start;
   justify-content: center;
   font-size: 14px;
   font-weight: 400;
+  max-width: 85%;
+  margin: auto;
 }
 
-.footer-container div:nth-child(4) {
-  margin-left: 4rem;
-}
 
 footer {
   background-color: #252B42;
@@ -260,4 +258,18 @@ footer {
   grid-template-columns: 46px 1fr;
   margin-bottom: 1rem;
   justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }

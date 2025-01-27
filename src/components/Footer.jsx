@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return(
         <footer>
-            <div className="container footer-container">
+            <div className="text-center lg:text-left footer-container flex-col lg:flex-row items-center lg:items-start ">
                 <div className="flex flex-col gap-2">
                     <h3 className="text-xl font-bold">Pages</h3>
                     <p>Home</p>
@@ -28,7 +28,7 @@ export default function Footer() {
                     <p>Marvin Hawkins</p>
                     <p>Bruce Simmmons</p>
                 </div>
-                <div className="">
+                <div className="ml-0 lg:ml-16">
                     <div className=" footer-info ">
                         <a href="https://www.google.com/maps"><img src="./img/map white logo.svg" alt=""/></a>
                         <p>7480 Mockingbird Hill undefined </p>
@@ -36,7 +36,7 @@ export default function Footer() {
                     <div className=" footer-info"><img src="./img/Mobile white logo.svg" alt=""/>
                         <p>(239) 555-0108</p>
                     </div>
-                    <div className=" flex gap-3 justify-start items-center ">
+                    <div className=" flex gap-3 justify-center lg:justify-start items-center ">
                         <a href="https://twitter.com/home"><img src="./img/twitter white logo.svg" alt=""/></a>
                         <a href="https://www.facebook.com/"><img src="./img/Facebook white logo.svg" alt=""/></a>
                         <a href="https://www.linkedin.com/feed/"><img src="./img/linkedinwhitelogo.svg" alt=""/></a>

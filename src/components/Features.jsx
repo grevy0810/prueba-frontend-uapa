@@ -10,34 +10,37 @@ export default function Features(){
     return(
         <>
             <section className="features py-8" id='features'>
-                <div className="container mx-auto px-4">
+                <div className="mx-2 text-center lg:max-w-[85%]  lg:mx-auto lg:px-4 px-0">
                     <h2 className="text-5xl font-normal text-center mb-4">Features</h2>
-                    <p className="text-center mb-8 text-gray-600">
+                    <p className="hidden lg:block text-center mb-8 text-gray-600">
                     Most calendars are designed for teams. 
 Slate is designed for freelancers
+                    </p>
+                    <p className=" lg:hidden text-center mb-8 text-gray-600">
+                    Most calendars are designed for teams.
                     </p>
 
                     {/* Video for mobile view */}
                     <div className="mb-8 block lg:hidden">
-                        <div className='w-full h-full items-center flex justify-center'>
+                        <div className='w-auto h-auto player-wrapper items-center flex justify-center'>
 
                         <ReactPlayer
-                            className='relative'
+                            className='relative react-player'
                             onClickPreview={handlePlay}
                             url="./public/video/computer.mp4" 
                             playing={isPlaying}
-                            playIcon={<img className='absolute'src='./img/play button.svg' alt='video' />}
+                            playIcon={<img className='absolute max-w-1/5'src='./img/play button.svg' alt='video' />}
                             controls={true}
-                            width="80%"
-                            light={ <img style={{height:'inherit'}} src='./img/screen.png' alt='video' />}
-                            
+                            light={ <img  src='./img/screen.png' alt='video' />}
+                            width="100%"
+                            height="100%"
                         />
                         </div>
                     </div>
                     {/* Video for mobile view */}
                 
 
-                    <div className="logosection grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                    <div className="logosection grid grid-cols-1 lg:grid-cols-3 gap-8 mb-1">
                     <div className="text-center">
                         <img
                         src="./img/logo1.svg"

@@ -27,8 +27,10 @@ export default function ContactUs() {
     return(
         <section className="container contact" id="Contact">
         <h2 className="text-5xl">Contact Us</h2>
-        <p>Most calendars are designed for teams. 
-        Slate is designed for freelancers </p>
+            <p >Most calendars are designed for teams. 
+            Slate is designed for freelancers </p>
+            {/* <p>Most calendars are designed for teams. 
+            Slate is designed for freelancers </p> */}
         <div className="hidden lg:flex w-full contact-desktop-section">
             <div className="contact-form w-1/2 max-w-[550px]">
                 <h5 className="text-xl font-bold">Contact Us</h5>
@@ -105,7 +107,7 @@ export default function ContactUs() {
                     <p>willie.jennings@example.com</p>
                 </div>
             </div>
-            <div className="contact-form">
+            <div className="contact-form mt-6">
                 <h5 className="text-xl font-bold">Contact Us</h5>
                 <form action=""  name="contactMobileForm" autoComplete="on" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Your Name" name="fname" required/>
