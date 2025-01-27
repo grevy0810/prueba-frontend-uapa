@@ -71,7 +71,7 @@ export default function Header() {
           <a href="#" className="-m-1.5 p-1.5">
             <img
               alt=""
-              src="/public/img/dark.svg"
+              src="./img/dark.svg"
               className=" w-auto"
             />
           </a>

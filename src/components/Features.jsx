@@ -27,7 +27,7 @@ Slate is designed for freelancers
                         <ReactPlayer
                             className='relative react-player'
                             onClickPreview={handlePlay}
-                            url="./public/video/computer.mp4" 
+                            url="./video/computer.mp4" 
                             playing={isPlaying}
                             playIcon={<img className='absolute max-w-1/5'src='./img/play button.svg' alt='video' />}
                             controls={true}
